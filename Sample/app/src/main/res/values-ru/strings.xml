@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Образец</string>
+    <string name="Hello_World">Привет мир</string>
+    <string name="Box_one">Первая бокс</string>
+    <string name="Box_two">Второй бокс</string>
+    <string name="Box_three">Третий бокс</string>
+    <string name="Box_four">Четвертый бокс</string>
+    <string name="Box_five">Пятый бокс</string>
+    <string name="Box_six">Шестой бокс</string>
+    <string name="Text_view">Текст представления</string>
+</resources>

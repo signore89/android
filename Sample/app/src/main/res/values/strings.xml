@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sample</string>
+    <string name="Hello_World">Hello world</string>
+    <string name="Box_one">Box one</string>
+    <string name="Box_two">Box Two</string>
+    <string name="Box_three">Box three</string>
+    <string name="Box_four">Box four</string>
+    <string name="Box_five">Box five</string>
+    <string name="Box_six">Box six</string>
+    <string name="Text_view">Text view</string>
+
+</resources>
