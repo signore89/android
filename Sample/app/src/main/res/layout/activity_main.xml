@@ -8,108 +8,121 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Box One - верхний на всю ширину -->
-    <TextView
-        android:id="@+id/boxOne"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/orange"
-        android:gravity="center"
-        android:text="@string/Box_one"
-        android:textColor="@color/white"
-        android:textSize="22sp"
-        android:textStyle="bold" />
-
-    <!-- Контейнер для Box Two и трех боксов в столбец -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:orientation="horizontal">
-
-        <!-- Box Two - левая часть -->
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!-- Box One - верхний на всю ширину -->
         <TextView
-            android:id="@+id/boxTwo"
-            android:layout_width="0dp"
-            android:layout_height="180dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:background="@color/green"
+            android:id="@+id/boxOne"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/orange"
             android:gravity="center"
-            android:text="@string/Box_two"
+            android:text="@string/Box_one"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
-        <!-- Три бокса в столбец - правая часть -->
+        <!-- Контейнер для Box Two и трех боксов в столбец -->
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="8dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="5dp">
-            <!-- Box Three -->
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <!-- Box Two - левая часть -->
             <TextView
-                android:id="@+id/boxThree"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginBottom="4dp"
+                android:id="@+id/boxTwo"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                android:background="@color/box_blue"
+                android:background="@color/green"
                 android:gravity="center"
-                android:text="@string/Box_three"
+                android:text="@string/Box_two"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
-            <!-- Box Four -->
-            <TextView
-                android:id="@+id/boxFour"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
+
+            <!-- Три бокса в столбец - правая часть -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
                 android:layout_weight="1"
-                android:background="@color/box_purple"
                 android:gravity="center"
-                android:text="@string/Box_four"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-            <!-- Box Five -->
-            <TextView
-                android:id="@+id/boxFive"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="4dp"
-                android:layout_weight="1"
-                android:background="@color/box_red"
-                android:gravity="center"
-                android:text="@string/Box_five"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:orientation="vertical"
+                android:padding="5dp">
+                <!-- Box Three -->
+                <TextView
+                    android:id="@+id/boxThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/box_blue"
+                    android:gravity="center"
+                    android:text="@string/Box_three"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <!-- Box Four -->
+                <TextView
+                    android:id="@+id/boxFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/box_purple"
+                    android:gravity="center"
+                    android:text="@string/Box_four"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <!-- Box Five -->
+                <TextView
+                    android:id="@+id/boxFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/box_red"
+                    android:gravity="center"
+                    android:text="@string/Box_five"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <!-- Box Six - по середине экрана -->
-    <TextView
-        android:id="@+id/boxSix"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="24dp"
-        android:background="@color/box_deep_orange"
-        android:gravity="center"
-        android:text="@string/Box_six"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <!-- Box Six - по середине экрана -->
+        <TextView
+            android:id="@+id/boxSix"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/box_deep_orange"
+            android:gravity="center"
+            android:text="@string/Box_six"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1" />-->
     <!-- TextView внизу -->
     <TextView
         android:id="@+id/textView"
